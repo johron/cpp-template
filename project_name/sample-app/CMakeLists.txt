@@ -28,8 +28,7 @@ target_link_libraries(${target_name} PUBLIC "compiler_features")
 target_link_libraries(${target_name} PUBLIC "sanitizers")
 target_link_libraries(${target_name} PUBLIC "sample-lib")
 
-target_include_directories(${target_name} PRIVATE "../../nexus-core/include")
-target_include_directories(${target_name} PRIVATE "../../nexus-gfx/include")
+target_include_directories(${target_name} PRIVATE "../sample-lib/include")
 
 set_target_properties(${target_name} PROPERTIES FOLDER "sample")
 set_target_properties(${target_name} PROPERTIES LINKER_LANGUAGE CXX)

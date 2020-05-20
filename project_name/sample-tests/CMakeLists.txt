@@ -19,7 +19,7 @@ source_group("res" FILES ${res_files})
 target_link_libraries(${target_name} CONAN_PKG::gtest)
 target_link_libraries(${target_name} "sample-lib")
 
-#target_include_directories(${target_name} PRIVATE "../../")
+target_include_directories(${target_name} PRIVATE "../sample-lib/include")
 
 set_target_properties(${target_name} PROPERTIES FOLDER "sample")
 
